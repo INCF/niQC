@@ -22,10 +22,12 @@ const PostWrapper = styled.div`
 
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
+  const { siteMetadata: site } = data.site;
+  console.log(site)
   return (
     <Layout>
-      <Helmet title={'Home Page'} />
-      <Header title="Home Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={site.titleAlt} />
+      <Header title={site.shortName}>{site.description}</Header>
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList
@@ -67,6 +69,14 @@ Index.propTypes = {
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        defaultTitle: title
+        titleAlt
+        shortName
+        description
+      }
+    }
     allMarkdownRemark(
       limit: 6
       sort: { order: DESC, fields: [frontmatter___date] }

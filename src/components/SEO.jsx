@@ -45,7 +45,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
         schemaOrgJSONLD = [
           {
             '@context': 'http://schema.org',
-            '@type': 'BlogPosting',
+            '@type': 'NewsPosting',
             '@id': seo.url,
             url: seo.url,
             name: title,

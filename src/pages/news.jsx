@@ -2,17 +2,17 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
-import { Header, BlogList } from 'components';
+import { Header, NewsList } from 'components';
 import { Layout } from 'layouts';
 
-const Blog = ({ data }) => {
+const News = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'Blog Page'} />
-      <Header title="Blog Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={'News Page'} />
+      <Header title="News Page">Gatsby Tutorial Starter</Header>
       {edges.map(({ node }) => (
-        <BlogList
+        <NewsList
           key={node.id}
           cover={node.frontmatter.cover.childImageSharp.fluid}
           path={node.frontmatter.path}
@@ -26,9 +26,9 @@ const Blog = ({ data }) => {
   );
 };
 
-export default Blog;
+export default News;
 
-Blog.propTypes = {
+News.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.arrayOf(
