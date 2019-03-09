@@ -13,8 +13,8 @@
   "scripts": {
     "start": "npm run develop",
     "develop": "gatsby develop",
-    "build": "gatsby build",
     "serve": "gatsby serve",
+    "build": "gatsby build",
     "clean": "rm -rf public && rm -rf .cache",
     "format-output": "prettier src/**/*.{js,jsx}",
     "format": "prettier --write src/**/*.{js,jsx}",
