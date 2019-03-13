@@ -9,8 +9,8 @@ const News = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'News Page'} />
-      <Header title="News Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={'News'} />
+      <Header title="News"></Header>
       {edges.map(({ node }) => (
         <NewsList
           key={node.id}
@@ -51,7 +51,10 @@ News.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath:{ regex: "/content/news/" } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           id
@@ -65,10 +68,8 @@ export const query = graphql`
               childImageSharp {
                 fluid(
                   maxWidth: 1000
-                  quality: 90
-                  traceSVG: { color: "#2B2B2F" }
                 ) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

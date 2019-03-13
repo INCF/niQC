@@ -6,6 +6,20 @@ import styled from '@emotion/styled';
 import { Header, PostList } from 'components';
 import { Layout } from 'layouts';
 
+const FragmentWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem 4rem 1rem 4rem;
+  @media (max-width: 1000px) {
+    margin: 4rem 2rem 1rem 2rem;
+  }
+  @media (max-width: 700px) {
+    margin: 4rem 1rem 1rem 1rem;
+  }
+`;
+
 const PostWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -21,15 +35,20 @@ const PostWrapper = styled.div`
 `;
 
 const Index = ({ data }) => {
-  const { edges } = data.allMarkdownRemark;
+  const { edges: fragments=[] } = data.fragments || {};
+  const { edges: news } = data.news || {};
   const { siteMetadata: site } = data.site;
-  console.log(site)
   return (
     <Layout>
       <Helmet title={site.titleAlt} />
       <Header title={site.shortName}>{site.description}</Header>
+      <FragmentWrapper>
+        {fragments.map(({ node }) => (
+          node.html
+        ))}
+      </FragmentWrapper>
       <PostWrapper>
-        {edges.map(({ node }) => (
+        {news.map(({ node }) => (
           <PostList
             key={node.id}
             cover={node.frontmatter.cover.childImageSharp.fluid}
@@ -48,7 +67,7 @@ export default Index;
 
 Index.propTypes = {
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
+    news: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
@@ -77,8 +96,19 @@ export const query = graphql`
         description
       }
     }
-    allMarkdownRemark(
+    fragments: allMarkdownRemark(
+      filter: { fileAbsolutePath:{ regex: "/content/fragments/index/" } }
+    ) {
+      edges {
+        node {
+          id
+          html
+        }
+      }
+    }
+    news: allMarkdownRemark(
       limit: 6
+      filter: { fileAbsolutePath:{ regex: "/content/news/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -94,10 +124,8 @@ export const query = graphql`
               childImageSharp {
                 fluid(
                   maxWidth: 1000
-                  quality: 90
-                  traceSVG: { color: "#2B2B2F" }
                 ) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

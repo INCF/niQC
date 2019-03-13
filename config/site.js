@@ -6,13 +6,13 @@ module.exports = {
   url: 'https://incf.github.io', // Domain of your site. No trailing slash!
   siteUrl: 'https://incf.github.io/niQC/', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element
-  logo: 'static/logo/logo.png', // Used for SEO
-  banner: 'static/logo/banner.png',
+  logo: 'static/logo/logo.svg', // Used for SEO
+  banner: 'static/logo/logo.svg',
   // JSONLD / Manifest
   favicon: 'static/logo/favicon.png', // Used for manifest favicon generation
   shortName: 'niQC', // shortname for manifest. MUST be shorter than 12 characters
   author: 'INCF', // Author for schemaORGJSONLD
-  themeColor: '#3e7bf2',
-  backgroundColor: '#d3e0ff',
+  themeColor: '#009fe3',
+  backgroundColor: '#ffffff',
   twitter: '@INCForg', // Twitter Username
 };
