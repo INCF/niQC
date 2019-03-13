@@ -85,7 +85,7 @@ exports.createPages = ({ graphql, actions }) => {
               path,
               component: postTemplate,
               context: {
-                pathSlug: `/news${path.replace(/^\/+/g, '')}`,
+                pathSlug: path,
                 prev,
                 next,
               },

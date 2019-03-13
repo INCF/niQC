@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
 import { Header, PostList } from 'components';
-import { Layout } from 'layouts';
+import { Layout, Content } from 'layouts';
 
 const FragmentWrapper = styled.div`
   display: flex;
@@ -44,7 +44,7 @@ const Index = ({ data }) => {
       <Header title={site.shortName}>{site.description}</Header>
       <FragmentWrapper>
         {fragments.map(({ node }) => (
-          node.html
+          <Content key={node.id} input={node.html} />
         ))}
       </FragmentWrapper>
       <PostWrapper>

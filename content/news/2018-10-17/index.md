@@ -1,5 +1,5 @@
 ---
-path: "/post-three"
+path: "/news/post-three"
 cover: "./finance.jpg"
 date: "2018-10-17"
 title: "Post Number Three"
