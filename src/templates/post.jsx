@@ -82,10 +82,7 @@ export const query = graphql`
         tags
         cover {
           childImageSharp {
-            fluid(
-              maxWidth: 1920
-              quality: 90
-            ) {
+            fluid(maxWidth: 1920, quality: 90) {
               ...GatsbyImageSharpFluid
             }
             resize(width: 1200, quality: 90) {

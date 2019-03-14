@@ -35,7 +35,7 @@ const PostWrapper = styled.div`
 `;
 
 const Index = ({ data }) => {
-  const { edges: fragments=[] } = data.fragments || {};
+  const { edges: fragments = [] } = data.fragments || {};
   const { edges: news } = data.news || {};
   const { siteMetadata: site } = data.site;
   return (
@@ -97,7 +97,7 @@ export const query = graphql`
       }
     }
     fragments: allMarkdownRemark(
-      filter: { fileAbsolutePath:{ regex: "/content/fragments/index/" } }
+      filter: { fileAbsolutePath: { regex: "/content/fragments/index/" } }
     ) {
       edges {
         node {
@@ -108,7 +108,7 @@ export const query = graphql`
     }
     news: allMarkdownRemark(
       limit: 6
-      filter: { fileAbsolutePath:{ regex: "/content/news/" } }
+      filter: { fileAbsolutePath: { regex: "/content/news/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -122,9 +122,7 @@ export const query = graphql`
             date(formatString: "MM.DD.YYYY")
             cover {
               childImageSharp {
-                fluid(
-                  maxWidth: 1000
-                ) {
+                fluid(maxWidth: 1000) {
                   ...GatsbyImageSharpFluid
                 }
               }

@@ -10,7 +10,7 @@ const News = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'News'} />
-      <Header title="News"></Header>
+      <Header title="News" />
       {edges.map(({ node }) => (
         <NewsList
           key={node.id}
@@ -52,7 +52,7 @@ News.propTypes = {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath:{ regex: "/content/news/" } }
+      filter: { fileAbsolutePath: { regex: "/content/news/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -66,9 +66,7 @@ export const query = graphql`
             date(formatString: "MM.DD.YYYY")
             cover {
               childImageSharp {
-                fluid(
-                  maxWidth: 1000
-                ) {
+                fluid(maxWidth: 1000) {
                   ...GatsbyImageSharpFluid
                 }
               }
