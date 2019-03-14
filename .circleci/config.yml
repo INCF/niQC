@@ -40,5 +40,5 @@ jobs:
           name: Deploy
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ];
-              npm run deploy
+              then npm run deploy;
             fi
