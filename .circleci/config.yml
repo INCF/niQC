@@ -36,4 +36,9 @@ jobs:
             git config --global user.email `git --no-pager show -s --format='%ae' HEAD`
             git config --global user.name `git --no-pager show -s --format='%an' HEAD`
 
-      - run: npm run deploy
+      - run:
+          name: Deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ];
+              npm run deploy
+            fi
