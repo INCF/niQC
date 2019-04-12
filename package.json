@@ -20,7 +20,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "lint-errors": "eslint src/**/*.{js,jsx} --quiet",
     "lint": "eslint src/**/*.{js,jsx}",
-    "deploy": "npm run clean && gatsby build --prefix-paths && cp -r .circleci public/.circleci && gh-pages -d public"
+    "deploy": "npm run clean && gatsby build --prefix-paths && cp -r .circleci public/.circleci && gh-pages --dotfiles -d public"
   },
   "dependencies": {
     "@babel/core": "^7.3.4",
