@@ -1,6 +1,6 @@
 # NeuroImaging Quality Control (niQC)
 
-Repository with the website content.
+Repository for the niQC website.
 
 ## Basic Structure
 
