@@ -34,7 +34,7 @@ jobs:
           name: Configure Git
           command: |
             git config --global user.email `git --no-pager show -s --format='%ae' HEAD`
-            git config --global user.name `git --no-pager show -s --format='%an' HEAD`
+            git config --global user.name "`git --no-pager show -s --format='%an' HEAD`"
 
       - run:
           name: Deploy
