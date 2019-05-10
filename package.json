@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "npm run develop",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --host=0.0.0.0 -p 9000",
     "serve": "gatsby serve",
     "build": "gatsby build",
     "clean": "rm -rf public && rm -rf .cache",

@@ -4,8 +4,8 @@ import { css, Global } from '@emotion/core';
 import PropTypes from 'prop-types';
 import 'typeface-open-sans';
 import 'typeface-candal';
-import { SEO } from 'components';
-import { NavBar, Footer } from 'layouts';
+import { NavBar, SEO } from 'components';
+import { Footer } from 'layouts';
 import theme from '../../config/theme';
 import headroom from '../styles/headroom';
 

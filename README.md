@@ -15,12 +15,17 @@ The `index.md` file may contain the page content, with the following header:
 ---
 path: "/about"
 title: "About"
+menu: 4
 ---
+
+# About!
 ```
 
 The `path` key indicates the URL for the page. In the example, the full URL will be: `https://incf.github.io/niQC/about`. A trailing slash is not required.
 
 The `title` key indicates the page title, replicated on the page title tag (`<title>`) and in the beginning of the page.
+
+The `menu` key indicates if the page should be shown in the header menu. If `menu` is lesser then one, it will not be displayed in the menu.
 
 Everything beyond the last `---` will be considered page content.
 
