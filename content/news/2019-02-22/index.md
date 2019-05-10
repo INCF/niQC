@@ -1,3 +1,11 @@
+---
+path: "/news/survey2019highlevel"
+cover: "./finance.jpg"
+date: "2019-02-22"
+title: "Community survey"
+tags: ['survey', 'statua quo', 'community', 'high-level']
+published: true
+---
 
 ## Community Survey
 
