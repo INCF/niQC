@@ -38,6 +38,7 @@ const NavBar = () => (
       <Link to="/about">About</Link>
       <Link to="/tools">Tools</Link>
       <Link to="/news">News</Link>
+      <Link to="/getinvolved">Get Involved</Link>
     </Nav>
   </Headroom>
 );
