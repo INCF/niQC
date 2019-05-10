@@ -1,6 +1,7 @@
 ---
 path: "/getinvolved"
 title: "Get Involved"
+menu: 2
 ---
 
 ## Get Involved
