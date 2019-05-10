@@ -3,7 +3,7 @@ path: "/about"
 title: "About"
 ---
 
-niQC is a special interest group (SIG) at the [INCF](https://www.incf.org) that aims to develop standards and best practices for quality control of neuroimaging data, including standardized protocols, easy to use tools and comprehensive manuals
+niQC is a special interest group (SIG) at the [INCF](https://www.incf.org) that aims to develop standards and best practices for quality control of neuroimaging data, including standardized protocols, easy to use tools and comprehensive manuals.
 
 ## Background
 
@@ -59,6 +59,10 @@ Hence, we get together to announce this SIG on neuroimaging Quality Control (niQ
 ## Current members 
 
 All the members in the [niQC google group](https://groups.google.com/d/forum/niqc) are considered to be members of the SIG.
+
+### Chairs
+ - [Pradeep Reddy Raamana](https://www.crossinvalidation.com)
+ - [Stephen C. Strother](https://www.strotherlab.ca)
 
 ## Useful links
 
