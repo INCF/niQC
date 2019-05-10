@@ -27,3 +27,13 @@ Everything beyond the last `---` will be considered page content.
 ## How to collaborate
 
 In order to suggest modifications, you need to open a pull request from your fork of this website. After proper review, your code will be merged into the `master` branch.
+
+## Running locally using Docker
+
+You can start a development server using Docker:
+
+```bash
+docker run -it -p 9000:9000 -v `pwd`:/opt/code -w /opt/code node:11.15.0 bash -c 'npm i; npm run develop'
+```
+
+This command will spawn a container, install the required dependencies for the project, and start the development server. You can access it at `http://localhost:9000`. The website content will be recompiled and refreshed every time a file is changed.
