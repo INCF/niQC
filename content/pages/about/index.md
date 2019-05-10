@@ -3,7 +3,7 @@ path: "/about"
 title: "About"
 ---
 
-niQC is a special interest group (SIG) at the [INCF](incf.org) that aims to develop standards and best practices for quality control of neuroimaging data, including standardized protocols, easy to use tools and comprehensive manuals
+niQC is a special interest group (SIG) at the [INCF](https://www.incf.org) that aims to develop standards and best practices for quality control of neuroimaging data, including standardized protocols, easy to use tools and comprehensive manuals
 
 ## Background
 
