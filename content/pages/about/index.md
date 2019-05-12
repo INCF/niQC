@@ -66,7 +66,10 @@ All the members in the [niQC google group](https://groups.google.com/d/forum/niq
  - [Stephen C. Strother](https://www.strotherlab.ca)
 
 ## Useful links
-
  - Join the group by subscribing: https://groups.google.com/d/forum/niqc
  - Send your ideas and questions: niqc@googlegroups.com
  - INCF : incf.org
+
+## Website Maintainers
+ - Annibal Solon
+ - Pradeep Reddy Raamana
