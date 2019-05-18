@@ -33,6 +33,14 @@ Everything beyond the last `---` will be considered page content.
 
 In order to suggest modifications, you need to open a pull request from your fork of this website. After proper review, your code will be merged into the `master` branch.
 
+Steps:
+ - Fork the [niQC repo](https://github.com/INCF/niQC/fork) 
+ - Find the page you would like to contribute to under `content/pages` and edit the `index.md` markdown page
+ - Send us pull a request
+ - If you are confused or having trouble, just [open an issue](https://github.com/INCF/niQC/issues/new) at the . 
+ 
+ Thank you for your interest in contributing to this effort.
+
 ## Running locally using Docker
 
 You can start a development server using Docker:
