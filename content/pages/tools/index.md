@@ -6,7 +6,7 @@ menu: 3
 
 This page is meant to be a dynamic collection of various QC tools that are available, with a brief summary of its purpose, how it is meant to be used, what the results are and whether they are open source and free.
 
-If you see a mistake in this description or you don't see your own tool or a tool that you think should belong here, [**please send a pull request (PR) with the changes needed**](https://github.com/INCF/niQC/pull/new/master), or [open an issue](https://github.com/INCF/niQC/issues/new) at the [niQC repo](https://github.com/INCF/niQC).
+If you see a mistake in this description or you don't see your own tool or a tool that you think should belong here, [**please send a pull request (PR) with the changes needed**](https://github.com/INCF/niQC/pull/new/master), or [open an issue](https://github.com/INCF/niQC/issues/new) at the [niQC repo](https://github.com/INCF/niQC). *Thank you for your contribution*.
 
 ## Table of Contents
 1. [Multimodal](#multimodal)
