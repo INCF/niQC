@@ -5,13 +5,20 @@ import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
   background: ${props => props.theme.colors.background.light};
-  padding-bottom: 1rem;
+  padding: 1rem;
+
+  @media only screen and (max-width: 1024px) {
+    padding-top: 4rem;
+  }
 `;
 
 const Text = styled.div`
   color: ${props => props.theme.colors.primary.base};
   text-align: center;
-  padding: 2.5rem 2rem 0rem;
+  padding: 5.5rem 2rem 0rem;
+  @media only screen and (max-width: 1024px) {
+    padding: 2.5rem 2rem 0rem;
+  }
   align-items: center;
 `;
 

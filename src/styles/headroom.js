@@ -34,6 +34,12 @@ const headroom = css`
     position: fixed;
     transform: translateY(-100%);
     transition: ${theme.transitions.headroom.transition};
+
+    @media only screen and (max-width : 640px) {
+      nav {
+        display: none !important;
+      }
+    }
   }
   .headroom--pinned {
     position: fixed;
