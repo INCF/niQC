@@ -57,6 +57,9 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 1024px) {
+    table { display: block; overflow: auto; }
+  }
 `;
 
 const Content = ({ input }) => (
