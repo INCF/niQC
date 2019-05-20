@@ -44,8 +44,8 @@ If you see a mistake in this description or you don't see your own tool or a too
 |--------------------------------------------------|----------|---------|---------|
 | [DTIprep](https://www.nitrc.org/projects/dtiprep/) | QC | Batch processing| C++ | |
 | [eddyqc](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddyqc/UsersGuide)| QC | batch processing | C (FSL) | JSON, PDF |
-| [ExploreDTI](http://exploredti.com) - not free | Visualization and quality assessment| Interactive| Matlab | TBA|
-| [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, check alignment  | Interactive    | Plots, reports |
+| [ExploreDTI](http://exploredti.com) - sign up required, free for academic research | Visualization and quality assessment| Interactive| Matlab | TBA|
+| [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate various artefacts, check alignment  | Interactive    | Plots, reports |
 
 ## Arterial Spin Labeling <a name="asl"></a>
 
