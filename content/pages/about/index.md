@@ -71,5 +71,5 @@ All the members in the [niQC google group](https://groups.google.com/d/forum/niq
  - INCF : incf.org
 
 ## Website Maintainers
- - Annibal Solon
+ - Anibal Solon
  - Pradeep Reddy Raamana
