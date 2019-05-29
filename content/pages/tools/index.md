@@ -57,7 +57,9 @@ If you see a mistake in this description or you don't see your own tool or a too
 
 | Tool                                             | Purpose | Interaction | Technology |Outputs |
 |--------------------------------------------------|----------|---------|---------|
-| [UniQC](https://github.com/CAIsr/uniQC) | Unified QC of MRI sequence development and fMRI artefacts|TBA|Matlab/SPM|TBA|
+| [UniQC](https://github.com/CAIsr/uniQC) | Unified QC of MRI sequence
+development and fMRI artefacts| Interactive | Matlab/SPM | Plots /
+Interactive Matlab Image objects |
 
 ## Miscellaneous <a name="misc"></a>
 
