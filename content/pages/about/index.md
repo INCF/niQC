@@ -59,7 +59,7 @@ Hence, we get together to announce this SIG on neuroimaging Quality Control (niQ
 
 ## Current members 
 
-All the members in the [niQC google group](https://groups.google.com/d/forum/niqc) are considered to be members of the SIG.
+All the members in the [niQC Google group](https://groups.google.com/d/forum/niqc) are considered to be members of the SIG.
 
 ### Chairs
  - [Pradeep Reddy Raamana](https://www.crossinvalidation.com)
@@ -68,8 +68,8 @@ All the members in the [niQC google group](https://groups.google.com/d/forum/niq
 ## Useful links
  - Join the group by subscribing: https://groups.google.com/d/forum/niqc
  - Send your ideas and questions: niqc@googlegroups.com
- - INCF : incf.org
+ - INCF: https://incf.org
 
 ## Website Maintainers
- - Anibal Solon
- - Pradeep Reddy Raamana
+ - [Anibal Solon](http://anibalsolon.com)
+ - [Pradeep Reddy Raamana](https://www.crossinvalidation.com)
