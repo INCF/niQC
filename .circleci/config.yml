@@ -23,7 +23,9 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
 
-      - run: npm install
+      - run:
+          name: "Install dependencies"
+          command: npm install
 
       - save_cache:
           paths:
@@ -31,13 +33,13 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: Configure Git
+          name: "Configure Git userr"
           command: |
             git config --global user.email `git --no-pager show -s --format='%ae' HEAD`
             git config --global user.name "`git --no-pager show -s --format='%an' HEAD`"
 
       - run:
-          name: Deploy
+          name: "Build & Deploy"
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ];
               then npm run deploy;
