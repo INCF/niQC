@@ -4,9 +4,9 @@ title: "Tools"
 menu: 3
 ---
 
-This page is meant to be a dynamic collection of various QC tools that are available, with a brief summary of its purpose, how it is meant to be used, what the results are and whether they are open source and free.
+This page is meant to be a dynamic collection of various QC tools that are available, with a brief summary of their purpose, usage, outputs and the technology they are based on.
 
-If you see a mistake in this description or you don't see your own tool or a tool that you think should belong here, [**please send a pull request (PR) with the changes needed**](https://github.com/INCF/niQC/pull/new/master), or [open an issue](https://github.com/INCF/niQC/issues/new) at the [niQC repo](https://github.com/INCF/niQC). *Thank you for your contribution*.
+If you don't see your own tool or a tool that you think should belong here, [**please send a pull request (PR) with the changes needed**](https://github.com/INCF/niQC/pull/new/master), or [open an issue](https://github.com/INCF/niQC/issues/new) at the [niQC repo](https://github.com/INCF/niQC). Thank you for your contribution.
 
 ## Table of Contents
 1. [Multimodal](#multimodal)
@@ -19,10 +19,10 @@ If you see a mistake in this description or you don't see your own tool or a too
 
 ## Multimodal <a name="multimodal"></a>
 
-| Tool                                             | Modalities | Interaction | Technology |Outputs |
+| Tool/resource                                   | Modalities | Interaction | Technology | Outputs |
 |--------------------------------------------------|----------|---------|---------|
+| [VisualQC](https://raamana.github.io/visualqc/)  | Various modalities: T1wMRI, fMRI, DWI, Quantitative MR  | Interactive  | Python  | Plots, reports |
 | [MRIQC](https://mriqc.readthedocs.io/en/stable/) | T1w, fMRI | Interactive & Automated  | Python  | Plots, reports, IQMs |
-| [VisualQC](https://raamana.github.io/visualqc/)  | Various modalities (T1wMRI, fMRI, DWI, Quantitative MR)  | Interactive  | Python  | Plots, reports |
 
 ## Anatomical (T1w MRI etc)<a name="anatomical"></a>
 
@@ -40,6 +40,7 @@ If you see a mistake in this description or you don't see your own tool or a too
 |--------------------------------------------------|----------|---------|---------|
 | [dashQC](http://dashqc-fmri.readthedocs.io)| Visualize distributions of quality metrics, check outliers and alignment| Interactive | JavaScript | Plots, reports|
 | [MRIQC](https://mriqc.readthedocs.io/en/stable/) | Identify outliers, Annotate, Extract Image Quality Metrics (IQMs) | Interactive & Automated  | Python  | Plots, reports, IQMs |
+| [rtQC](https://github.com/rtQC-group/rtQC) | Various aspects of QC for real-time fMRI | Interactive  | Matlab, SPM12  | Plots, reports, regressors for denoising |
 | [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure python  | Plots, reports |
 
 ## Diffusion MRI <a name="diffusion"></a>
@@ -61,9 +62,7 @@ If you see a mistake in this description or you don't see your own tool or a too
 
 | Tool                                             | Purpose | Interaction | Technology |Outputs |
 |--------------------------------------------------|----------|---------|---------|
-| [UniQC](https://github.com/CAIsr/uniQC) | Unified QC of MRI sequence
-development and fMRI artefacts| Interactive | Matlab/SPM | Plots /
-Interactive Matlab Image objects |
+| [UniQC](https://github.com/CAIsr/uniQC) | Unified QC of MRI sequence development and fMRI artefacts| Interactive | Matlab/SPM | Plots, interactive Matlab Image objects |
 
 ## Miscellaneous <a name="misc"></a>
 
