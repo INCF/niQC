@@ -21,23 +21,25 @@ If you see a mistake in this description or you don't see your own tool or a too
 
 | Tool                                             | Modalities | Interaction | Technology |Outputs |
 |--------------------------------------------------|----------|---------|---------|
+| [MRIQC](https://mriqc.readthedocs.io/en/stable/) | T1w, fMRI | Interactive & Automated  | Python  | Plots, reports, IQMs |
 | [VisualQC](https://raamana.github.io/visualqc/)  | Various modalities (T1wMRI, fMRI, DWI, Quantitative MR)  | Interactive  | Python  | Plots, reports |
 
 ## Anatomical (T1w MRI etc)<a name="anatomical"></a>
 
 | Tool                                             | Purpose | Interaction | Technology | Outputs |
 |--------------------------------------------------|----------|---------|---------|---------|
-| [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure Python | Plots, reports |
 | [MindControl](https://github.com/akeshavan/mindcontrol)| Identify outliers, Annotate, Review anatomical accuracy, Edit and correct voxels | Interactive |Python, Javascript|
+| [MRIQC](https://mriqc.readthedocs.io/en/stable/) | Identify outliers, Annotate, Extract Image Quality Metrics (IQMs), Quality Prediction | Interactive & Automated  | Python  | Plots, reports, IQMs, automated rating |
+| [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure Python | Plots, reports |
 | [PALS](https://github.com/npnl/pals)|  Checks orientation of stroke T1w MRI + lesion mask inputs, performs lesion correction, calculates lesion load, and automatically outputs QC pages | Interactive |Python| QC pages, reports |
 
 ## Functional MRI <a name="fmri"></a>
 
 | Tool                                             | Purpose | Interaction |  Technology | Outputs |
 |--------------------------------------------------|----------|---------|---------|
-| [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure python  | Plots, reports |
-| [MRIQC](https://mriqc.readthedocs.io/en/stable/) | Generate visulization and reports, identify unusable scans   | Batch processing | Pure python | Plots, reports   |
 | [dashQC](http://dashqc-fmri.readthedocs.io)| Visualize distributions of quality metrics, check outliers and alignment| Interactive | JavaScript | Plots, reports|
+| [MRIQC](https://mriqc.readthedocs.io/en/stable/) | Identify outliers, Annotate, Extract Image Quality Metrics (IQMs) | Interactive & Automated  | Python  | Plots, reports, IQMs |
+| [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure python  | Plots, reports |
 
 ## Diffusion MRI <a name="diffusion"></a>
 
@@ -66,4 +68,4 @@ Interactive Matlab Image objects |
 
 | Tool                                             | Purpose | Interaction | Technology |Outputs |
 |--------------------------------------------------|----------|---------|---------|
-|||||
+| [MRIQC Web-API](https://doi.org/10.1038/S41597-019-0035-4) | Crowdsource Image Quality Metrics (IQMs) | Automated  | Database  | IQMs & Expert quality annotations |
