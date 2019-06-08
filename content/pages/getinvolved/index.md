@@ -11,6 +11,4 @@ You can contribute to the standardization efforts in various ways including but 
  - contribute to various tools listed in the [tools page](/tools).
  - raise awareness about the niQC SIG and spread the word.
 
- ## Follow our news
-
- https://incf.github.io/niQC/rss.xml
+## [Follow our news!](https://incf.github.io/niQC/rss.xml)
