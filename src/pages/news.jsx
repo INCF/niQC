@@ -6,15 +6,17 @@ import { Header, NewsList } from 'components';
 import { Layout } from 'layouts';
 
 const News = ({ data }) => {
+  const { siteMetadata: { pathPrefix } } = data.site;
+  const realPrefix = pathPrefix === '/' ? '' : pathPrefix;
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
       <Helmet title={'News'} />
-      <Header title="News" />
+      <Header title="News"><a href={`${realPrefix}/rss.xml`}>Follow our RSS feed!</a></Header>
       {edges.map(({ node }) => (
         <NewsList
           key={node.id}
-          cover={node.frontmatter.cover.childImageSharp.fluid}
+          cover={node.frontmatter.cover ? node.frontmatter.cover.childImageSharp.fluid : null}
           path={node.frontmatter.path}
           title={node.frontmatter.title}
           date={node.frontmatter.date}
@@ -36,7 +38,7 @@ News.propTypes = {
           node: PropTypes.shape({
             excerpt: PropTypes.string,
             frontmatter: PropTypes.shape({
-              cover: PropTypes.object.isRequired,
+              cover: PropTypes.object,
               path: PropTypes.string.isRequired,
               title: PropTypes.string.isRequired,
               date: PropTypes.string.isRequired,
@@ -73,6 +75,11 @@ export const query = graphql`
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        pathPrefix
       }
     }
   }

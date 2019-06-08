@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
-import { Header, PostList } from 'components';
+import { Header, NewsList } from 'components';
 import { Layout, Content } from 'layouts';
 
 const FragmentWrapper = styled.div`
@@ -49,9 +49,9 @@ const Index = ({ data }) => {
       </FragmentWrapper>
       <PostWrapper>
         {news.map(({ node }) => (
-          <PostList
+          <NewsList
             key={node.id}
-            cover={node.frontmatter.cover.childImageSharp.fluid}
+            cover={node.frontmatter.cover ? node.frontmatter.cover.childImageSharp.fluid : null}
             path={node.frontmatter.path}
             title={node.frontmatter.title}
             date={node.frontmatter.date}
@@ -73,7 +73,7 @@ Index.propTypes = {
           node: PropTypes.shape({
             excerpt: PropTypes.string,
             frontmatter: PropTypes.shape({
-              cover: PropTypes.object.isRequired,
+              cover: PropTypes.object,
               path: PropTypes.string.isRequired,
               title: PropTypes.string.isRequired,
               date: PropTypes.string.isRequired,
