@@ -89,11 +89,11 @@ const Title = styled.h1`
 const NewsList = ({ path, cover, title, date, excerpt, tags }) => (
   <Container>
     <Wrapper>
-      <Image>
-        <Link to={path} title={title}>
+      { cover ? 
+        <Image>
           <Img fluid={cover} />
-        </Link>
-      </Image>
+        </Image>
+      : null }
       <Information>
         <Date>{date}</Date>
         <Link to={path}>
@@ -109,10 +109,10 @@ const NewsList = ({ path, cover, title, date, excerpt, tags }) => (
 export default NewsList;
 
 NewsList.propTypes = {
-  cover: PropTypes.object.isRequired,
+  cover: PropTypes.object,
   path: PropTypes.string.isRequired,
   excerpt: PropTypes.string,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  tags: PropTypes.array.isRequired,
+  tags: PropTypes.array,
 };

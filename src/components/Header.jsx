@@ -24,6 +24,9 @@ const Text = styled.div`
 
 const Subtitle = styled.p`
   color: ${props => props.theme.colors.primary.light};
+  * {
+    color: ${props => props.theme.colors.primary.light};
+  }
 `;
 
 const Header = ({ children, title, date, cover }) => (
