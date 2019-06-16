@@ -22,7 +22,7 @@ See you all there! And bring your friends.
 
 We are delighted to annouce this meeting was very well attended by 70+ members. 
 
-![full house SIG meeting in Rome](niqc_meeting_ohbm2019rome_fullroom.png)
+![full house SIG meeting in Rome](./niqc_meeting_ohbm2019rome_fullroom.png)
 
 We had an open and wide-ranging discussion covering various important aspects related to the full scope of the niQC SIG. The following action items were finalized, based on initial suggestions from the chair Pradeep Reddy Raamana:
 
