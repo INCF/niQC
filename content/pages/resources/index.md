@@ -13,7 +13,7 @@ This page would be collecting various useful resources related to QC and QA of n
 
 ## Education <a name="education"></a>
 
-Various educational courses, tutorials and workshop content will be collected here. TBA.
+Various educational courses, tutorials and workshop content will be collected [here](/education/).
 
 ## Datasets <a name="datasets"></a>
 
