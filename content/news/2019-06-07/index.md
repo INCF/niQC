@@ -26,13 +26,14 @@ We are delighted to annouce this meeting was very well attended by 70+ members.
 
 We had an open and wide-ranging discussion covering various important aspects related to the full scope of the niQC SIG. The following action items were finalized, based on initial suggestions from the chair Pradeep Reddy Raamana:
 
- - Curate the responses and summarize the survey 
-  - to define scope broadly and deeply
+ - Curate the responses from the broad survey and summarize them 
+   - to define scope broadly and deeply
  - Forming sub-groups per each modality or analysis!
+   - Draft guidelines, and perhaps a template for high-level protocol?
  - Running periodic webinars for tutorials, latest advances and open panel discussions
  - Define terminology
-  - Reuse or rely on COBIDAS
-  - What is even a “protocol”?
+   - Reuse or rely on COBIDAS
+   - What is even a “protocol”?
  - Define and refine “image quality metrics” (IQMs)
  - Get everyone to share datasets and ground truth ratings
 
