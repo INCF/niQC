@@ -1,6 +1,7 @@
 ---
 path: "/news/sigMeetingOhbm2019"
 date: "2019-06-07"
+cover: "./niqc_meeting_ohbm2019rome_fullroom.jpg"
 title: "SIG Meeting at OHBM'19 in Rome"
 tags: ['meeting', 'SIG-meeting', 'ohbm', '2019']
 published: true
