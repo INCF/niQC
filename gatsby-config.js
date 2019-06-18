@@ -37,10 +37,17 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            }
+          },
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -67,7 +74,6 @@ module.exports = {
         pathToConfigModule: 'config/typography.js',
       },
     },
-    'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
