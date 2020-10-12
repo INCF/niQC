@@ -40,6 +40,7 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 |--------------------------------------------------|----------|---------|---------|
 | [dashQC](http://dashqc-fmri.readthedocs.io)| Visualize distributions of quality metrics, check outliers and alignment| Interactive | JavaScript | Plots, reports|
 | [MRIQC](https://mriqc.readthedocs.io/en/stable/) | Identify outliers, Annotate, Extract Image Quality Metrics (IQMs) | Interactive & Automated  | Python  | Plots, reports, IQMs |
+| [pyfMRIqc](https://drmichaellindner.github.io/pyfMRIqc/) | Calculates various Image Quality Metrics (IQMs) | Batch-processing  | Python  | Plots, reports, IQMs |
 | [rtQC](https://github.com/rtQC-group/rtQC) | Various aspects of QC for real-time fMRI | Interactive  | Matlab, SPM12  | Plots, reports, regressors for denoising |
 | [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure python  | Plots, reports |
 
