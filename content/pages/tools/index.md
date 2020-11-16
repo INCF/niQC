@@ -23,6 +23,7 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 |--------------------------------------------------|----------|---------|---------|
 | [VisualQC](https://raamana.github.io/visualqc/)  | Various modalities: T1wMRI, fMRI, DWI, Quantitative MR  | Interactive  | Python  | Plots, reports |
 | [MRIQC](https://mriqc.readthedocs.io/en/stable/) | T1w, fMRI | Interactive & Automated  | Python  | Plots, reports, IQMs |
+| [MRQy](https://github.com/ccipd/MRQy)            | Various modalities over the full body | Interactive & Automated  | Python & JavaScript  | Plots, IQMs |
 
 ## Anatomical (T1w MRI etc)<a name="anatomical"></a>
 
@@ -33,6 +34,7 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 | [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure Python | Plots, reports |
 | [PALS](https://github.com/npnl/pals)|  Checks orientation of stroke T1w MRI + lesion mask inputs, performs lesion correction, calculates lesion load, and automatically outputs QC pages | Interactive |Python| QC pages, reports |
 | [Qoala-T](https://github.com/Qoala-T/QC)| Quality rating of FreeSurfer segmentation | Batch Processing | R, FreeSurfer | Qoala-T ratings (0-100), plot + csv file |
+| [MRQy](https://github.com/ccipd/MRQy) | Extract Image Quality Metrics (IQMs), Batch Effect Detection | Interactive & Automated  | Python & JavaScript  | Plots, IQMs, Visualize with different visualization tools; Tables, Parallel Coordinate Plot (PCP), Bar Chart, Images, UMAP, T-SNE |
 
 ## Functional MRI <a name="fmri"></a>
 
@@ -43,6 +45,8 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 | [pyfMRIqc](https://drmichaellindner.github.io/pyfMRIqc/) | Calculates various Image Quality Metrics (IQMs) | Batch-processing  | Python  | Plots, reports, IQMs |
 | [rtQC](https://github.com/rtQC-group/rtQC) | Various aspects of QC for real-time fMRI | Interactive  | Matlab, SPM12  | Plots, reports, regressors for denoising |
 | [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure python  | Plots, reports |
+| [MRQy](https://github.com/ccipd/MRQy) | Extract Image Quality Metrics (IQMs), Batch Effect Detection | Interactive & Automated  | Python & JavaScript  | Plots, IQMs, Visualize with different visualization tools; Tables, Parallel Coordinate Plot (PCP), Bar Chart, Images, UMAP, T-SNE |
+
 
 ## Diffusion MRI <a name="diffusion"></a>
 
@@ -70,3 +74,5 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 | Tool                                             | Purpose | Interaction | Technology |Outputs |
 |--------------------------------------------------|----------|---------|---------|
 | [MRIQC Web-API](https://doi.org/10.1038/S41597-019-0035-4) | Crowdsource Image Quality Metrics (IQMs) | Automated  | Database  | IQMs & Expert quality annotations |
+| [MRQy](https://github.com/ccipd/MRQy) | Extract Image Quality Metrics (IQMs), Batch Effect Detection | Interactive & Automated  | Python & JavaScript  | Plots, IQMs, Visualize with different visualization tools; Tables, Parallel Coordinate Plot (PCP), Bar Chart, Images, UMAP, T-SNE |
+
