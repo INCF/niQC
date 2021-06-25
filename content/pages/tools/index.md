@@ -70,3 +70,4 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 | Tool                                             | Purpose | Interaction | Technology |Outputs |
 |--------------------------------------------------|----------|---------|---------|
 | [MRIQC Web-API](https://doi.org/10.1038/S41597-019-0035-4) | Crowdsource Image Quality Metrics (IQMs) | Automated  | Database  | IQMs & Expert quality annotations |
+| [ReproStim](https://github.com/ReproNim/reprostim/)     | Auto-collect audio/video stimuli as presented to participant | Automated | Magewell USB Capture Plus device | audio/video recording (BIDS)
