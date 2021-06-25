@@ -21,18 +21,18 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 
 | Tool/resource                                   | Modalities | Interaction | Technology | Outputs |
 |--------------------------------------------------|----------|---------|---------|
-| [VisualQC](https://raamana.github.io/visualqc/)  | Various modalities: T1wMRI, fMRI, DWI, Quantitative MR  | Interactive  | Python  | Plots, reports |
 | [MRIQC](https://mriqc.readthedocs.io/en/stable/) | T1w, fMRI | Interactive & Automated  | Python  | Plots, reports, IQMs |
+| [VisualQC](https://raamana.github.io/visualqc/)  | Various modalities: T1wMRI, fMRI, DWI, Quantitative MR  | Interactive  | Python  | Plots, reports |
 
 ## Anatomical (T1w MRI etc)<a name="anatomical"></a>
 
 | Tool                                             | Purpose | Interaction | Technology | Outputs |
 |--------------------------------------------------|----------|---------|---------|---------|
-| [MindControl](https://github.com/akeshavan/mindcontrol)| Identify outliers, Annotate, Review anatomical accuracy, Edit and correct voxels | Interactive |Python, Javascript|
 | [MRIQC](https://mriqc.readthedocs.io/en/stable/) | Identify outliers, Annotate, Extract Image Quality Metrics (IQMs), Quality Prediction | Interactive & Automated  | Python  | Plots, reports, IQMs, automated rating |
-| [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure Python | Plots, reports |
+| [MindControl](https://github.com/akeshavan/mindcontrol)| Identify outliers, Annotate, Review anatomical accuracy, Edit and correct voxels | Interactive |Python, Javascript|
 | [PALS](https://github.com/npnl/pals)|  Checks orientation of stroke T1w MRI + lesion mask inputs, performs lesion correction, calculates lesion load, and automatically outputs QC pages | Interactive |Python| QC pages, reports |
 | [Qoala-T](https://github.com/Qoala-T/QC)| Quality rating of FreeSurfer segmentation | Batch Processing | R, FreeSurfer | Qoala-T ratings (0-100), plot + csv file |
+| [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure Python | Plots, reports |
 
 ## Functional MRI <a name="fmri"></a>
 
