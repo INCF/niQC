@@ -20,11 +20,18 @@ jobs:
       - name: Install Project Dependencies
         run: npm install
 
-      - name: Configure Git commiter ingo
+      - name: Configure Git commiter info
         run: |
-          git config --global user.email `git --no-pager show -s --format='%ae' HEAD`
+          git config --global user.email "`git --no-pager show -s --format='%ae' HEAD`"
           git config --global user.name "`git --no-pager show -s --format='%an' HEAD`"
 
-      - run: npm run deploy
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build
+        run: |
+          gatsby build --prefix-path
+          cp -r .github public/.github
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
