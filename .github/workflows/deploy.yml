@@ -1,0 +1,32 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-book:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '13.x'
+
+      - name: Install Project Dependencies
+        run: npm install
+
+      - name: Configure Git commiter ingo
+        run: |
+          git config --global user.email `git --no-pager show -s --format='%ae' HEAD`
+          git config --global user.name "`git --no-pager show -s --format='%an' HEAD`"
+
+      - run: npm deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
