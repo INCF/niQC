@@ -27,8 +27,7 @@ jobs:
 
       - name: Build
         run: |
-          gatsby build --prefix-path
-          cp -r .github public/.github
+          npm run deploy
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
