@@ -2,6 +2,7 @@
 path: "/news/phantomQAmeetingJuly2021"
 date: "2021-07-07"
 title: "Phantom QA/QC open panel discussion"
+cover: "../images/phantom_image.png"
 tags: ['meeting', 'SIG-meeting', 'phantom', '2021']
 published: true
 ---
