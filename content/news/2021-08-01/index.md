@@ -2,6 +2,7 @@
 path: "/news/phantomQAmeetingJuly2021"
 date: "2021-08-01"
 title: "Quality Conversations webinar series"
+cover: "QualityConversationsWebinarSeriesFlyer.jpg"
 tags: ['announcement', 'SIG-meetings', 'seminars', 'meetings', '2021']
 published: true
 ---
