@@ -1,5 +1,5 @@
 ---
-path: "/news/phantomQAmeetingJuly2021"
+path: "/news/QualityConversationsAnnouncement"
 date: "2021-08-01"
 title: "Quality Conversations webinar series"
 cover: "./QualityConversationsWebinarSeriesFlyer.jpg"
