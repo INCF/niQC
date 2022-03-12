@@ -20,7 +20,7 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 ## Multimodal <a name="multimodal"></a>
 
 | Tool/resource                                   | Modalities | Interaction | Technology | Outputs |
-|--------------------------------------------------|----------|---------|---------|
+|--------------------------------------------------|----------|---------|---------|---------|
 | [MRIQC](https://mriqc.readthedocs.io/en/stable/) | T1w, fMRI | Interactive & Automated  | Python  | Plots, reports, IQMs |
 | [VisualQC](https://raamana.github.io/visualqc/)  | Various modalities: T1wMRI, fMRI, DWI, Quantitative MR  | Interactive  | Python  | Plots, reports |
 
@@ -30,6 +30,7 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 |--------------------------------------------------|----------|---------|---------|---------|
 | [MRIQC](https://mriqc.readthedocs.io/en/stable/) | Identify outliers, Annotate, Extract Image Quality Metrics (IQMs), Quality Prediction | Interactive & Automated  | Python  | Plots, reports, IQMs, automated rating |
 | [MindControl](https://github.com/akeshavan/mindcontrol)| Identify outliers, Annotate, Review anatomical accuracy, Edit and correct voxels | Interactive |Python, Javascript|
+| [braindr](https://github.com/OpenNeuroLab/braindr) | T1w or other 2D slices, segmentation | Interactive  | JavaScript  | Plots, reports |
 | [PALS](https://github.com/npnl/pals)|  Checks orientation of stroke T1w MRI + lesion mask inputs, performs lesion correction, calculates lesion load, and automatically outputs QC pages | Interactive |Python| QC pages, reports |
 | [Qoala-T](https://github.com/Qoala-T/QC)| Quality rating of FreeSurfer segmentation | Batch Processing | R, FreeSurfer | Qoala-T ratings (0-100), plot + csv file |
 | [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure Python | Plots, reports |
@@ -37,7 +38,7 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 ## Functional MRI <a name="fmri"></a>
 
 | Tool                                             | Purpose | Interaction |  Technology | Outputs |
-|--------------------------------------------------|----------|---------|---------|
+|--------------------------------------------------|----------|---------|---------|---------|
 | [dashQC](http://dashqc-fmri.readthedocs.io)| Visualize distributions of quality metrics, check outliers and alignment| Interactive | JavaScript | Plots, reports|
 | [MRIQC](https://mriqc.readthedocs.io/en/stable/) | Identify outliers, Annotate, Extract Image Quality Metrics (IQMs) | Interactive & Automated  | Python  | Plots, reports, IQMs |
 | [pyfMRIqc](https://drmichaellindner.github.io/pyfMRIqc/) | Calculates various Image Quality Metrics (IQMs) | Batch-processing  | Python  | Plots, reports, IQMs |
@@ -47,7 +48,7 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 ## Diffusion MRI <a name="diffusion"></a>
 
 | Tool                                             | Purpose | Interaction | Technology |Outputs |
-|--------------------------------------------------|----------|---------|---------|
+|--------------------------------------------------|----------|---------|---------|---------|
 | [DTIprep](https://www.nitrc.org/projects/dtiprep/) | QC | Batch processing| C++ | |
 | [eddyqc](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddyqc/UsersGuide)| QC | batch processing | C (FSL) | JSON, PDF |
 | [ExploreDTI](http://exploredti.com) - sign up required, free for academic research | Visualization and quality assessment| Interactive| Matlab | TBA|
@@ -56,18 +57,19 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 ## Arterial Spin Labeling <a name="asl"></a>
 
 | Tool                                             | Purpose | Interaction | Technology |Outputs |
-|--------------------------------------------------|----------|---------|---------|
+|--------------------------------------------------|----------|---------|---------|---------|
 | [ExploreASL](https://sites.google.com/view/exploreasl) |  image processing and statistics of ASL | Batch processing  | Matlab/SPM  | TBA   |
 
 ## Scanner and Hardware QC <a name="hardware"></a>
 
 | Tool                                             | Purpose | Interaction | Technology |Outputs |
-|--------------------------------------------------|----------|---------|---------|
+|--------------------------------------------------|----------|---------|---------|---------|
 | [UniQC](https://github.com/CAIsr/uniQC) | Unified QC of MRI sequence development and fMRI artefacts| Interactive | Matlab/SPM | Plots, interactive Matlab Image objects |
 
 ## Miscellaneous <a name="misc"></a>
 
 | Tool                                             | Purpose | Interaction | Technology |Outputs |
-|--------------------------------------------------|----------|---------|---------|
+|--------------------------------------------------|----------|---------|---------|---------|
+| [braindr](https://github.com/OpenNeuroLab/braindr) | T1w or other 2D slices, segmentation | Interactive  | JavaScript  | Plots, reports |
 | [MRIQC Web-API](https://doi.org/10.1038/S41597-019-0035-4) | Crowdsource Image Quality Metrics (IQMs) | Automated  | Database  | IQMs & Expert quality annotations |
 | [ReproStim](https://github.com/ReproNim/reprostim/)     | Auto-collect audio/video stimuli as presented to participant | Automated | Magewell USB Capture Plus device | audio/video recording (BIDS)
