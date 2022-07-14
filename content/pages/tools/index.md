@@ -28,9 +28,10 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 
 | Tool                                             | Purpose | Interaction | Technology | Outputs |
 |--------------------------------------------------|----------|---------|---------|---------|
+| [braindr](https://github.com/OpenNeuroLab/braindr) | T1w or other 2D slices, segmentation | Interactive  | JavaScript  | Plots, reports |
+| [CAT12](https://neuro-jena.github.io/cat/) | Extract overall weighted image quality (IQR) | Interactive & Automated | Matlab | Plots, reports, automated rating, QC pages |
 | [MRIQC](https://mriqc.readthedocs.io/en/stable/) | Identify outliers, Annotate, Extract Image Quality Metrics (IQMs), Quality Prediction | Interactive & Automated  | Python  | Plots, reports, IQMs, automated rating |
 | [MindControl](https://github.com/akeshavan/mindcontrol)| Identify outliers, Annotate, Review anatomical accuracy, Edit and correct voxels | Interactive |Python, Javascript|
-| [braindr](https://github.com/OpenNeuroLab/braindr) | T1w or other 2D slices, segmentation | Interactive  | JavaScript  | Plots, reports |
 | [PALS](https://github.com/npnl/pals)|  Checks orientation of stroke T1w MRI + lesion mask inputs, performs lesion correction, calculates lesion load, and automatically outputs QC pages | Interactive |Python| QC pages, reports |
 | [Qoala-T](https://github.com/Qoala-T/QC)| Quality rating of FreeSurfer segmentation | Batch Processing | R, FreeSurfer | Qoala-T ratings (0-100), plot + csv file |
 | [VisualQC](https://raamana.github.io/visualqc/)  | Detect and rate artefacts, Accuracy of volumetric or suface segmentations, check alignment  | Interactive | Pure Python | Plots, reports |
