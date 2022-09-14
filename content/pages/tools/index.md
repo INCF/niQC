@@ -63,10 +63,10 @@ If you don't see your own tool or a tool that you think should belong here, [**p
 
 ## Scanner and Hardware QC <a name="hardware"></a>
 
-| Tool                                             | Purpose | Interaction | Technology |Outputs |
-|--------------------------------------------------|----------|---------|---------|---------|
-| [UniQC](https://github.com/CAIsr/uniQC) | Unified QC of MRI sequence development and fMRI artefacts| Interactive | Matlab/SPM | Plots, interactive Matlab Image objects |
-
+| Tool                                             | Purpose | Interaction | Technology     | Outputs                                 |
+|--------------------------------------------------|----------|---------|----------------|-----------------------------------------|
+| [UniQC](https://github.com/CAIsr/uniQC) | Unified QC of MRI sequence development and fMRI artefacts| Interactive | Matlab/SPM     | Plots, interactive Matlab Image objects |
+| [mrQA](https://github.com/Open-Minds-Lab/mrQA) | Automatic evaluation of protocol compliance | Automated | Python | Reports                                 |
 ## Miscellaneous <a name="misc"></a>
 
 | Tool                                             | Purpose | Interaction | Technology |Outputs |
